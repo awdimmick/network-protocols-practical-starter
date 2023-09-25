@@ -84,9 +84,9 @@ radio.onReceivedNumber(function (receivedNumber) {
     }
 })
 function showCurrentBitOnLED () {
-    for (let index3 = 0; index3 <= 3; index3++) {
-        led.unplot(index3, 1)
-        led.unplot(index3, 4)
+    for (let index = 0; index <= 3; index++) {
+        led.unplot(index, 1)
+        led.unplot(index, 4)
     }
     led.plot(currentBit % 4, 1 + Math.idiv(currentBit, 4) * 3)
 }
